@@ -868,7 +868,7 @@ h4 {
 }
 
 .pages__header h1 {
-    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-size: clamp(1.8rem, 6vw, 5rem);
     margin-top: 1rem;
     line-height: 1;
 }
@@ -1020,4 +1020,36 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/* Вспомогательные стили для Privacy Policy */
+.policy-sub {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 2rem 0 1rem;
+    color: var(--color-text);
+    letter-spacing: 1px;
+}
+
+.pages__content .lead {
+    border-left: 4px solid var(--color-accent);
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+    font-style: italic;
+}
+.text-gradient {
+    /* Создаем градиент от Electric Blue к Neon Rose */
+    background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-secondary) 100%);
+
+    /* Магия обрезки фона по тексту */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    /* Сбрасываем контур, который мешал на светлом фоне */
+    -webkit-text-stroke: 0;
+
+    /* Добавляем немного объема для журнального стиля */
+    display: inline-block;
 }
