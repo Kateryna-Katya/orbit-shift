@@ -855,3 +855,144 @@ h4 {
         aspect-ratio: 16 / 9;
     }
 }
+/* --- LEGAL PAGES STYLES --- */
+.pages {
+    padding: 10rem 0;
+    background-color: var(--color-bg);
+}
+
+.pages__header {
+    margin-bottom: 5rem;
+    border-bottom: 2px solid var(--color-text);
+    padding-bottom: 3rem;
+}
+
+.pages__header h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-top: 1rem;
+    line-height: 1;
+}
+
+.pages__content {
+    max-width: 900px;
+    /* Ограничиваем ширину для удобства чтения */
+}
+
+.pages__content .lead {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 3rem;
+    line-height: 1.4;
+}
+
+.pages__content h2 {
+    font-size: 2rem;
+    margin: 4rem 0 1.5rem;
+    text-transform: uppercase;
+}
+
+.pages__content p {
+    font-size: 1.1rem;
+    color: var(--color-muted);
+    margin-bottom: 1.5rem;
+}
+
+/* Стилизация списков */
+.pages__list {
+    margin: 2rem 0;
+    padding-left: 0;
+}
+
+.pages__list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 1.2rem;
+    color: var(--color-muted);
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+.pages__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 15px;
+    height: 2px;
+    background: var(--color-accent);
+    /* Синяя черта вместо точки */
+}
+
+.pages__list strong {
+    color: var(--color-text);
+}
+
+/* Карточка контактов внизу */
+.pages__contact-card {
+    margin-top: 4rem;
+    padding: 2.5rem;
+    background: var(--color-surface);
+    border-left: 5px solid var(--color-accent);
+}
+
+.pages__contact-card p {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.pages__contact-card a {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .pages {
+        padding: 6rem 0;
+    }
+
+    .pages__header {
+        margin-bottom: 3rem;
+    }
+
+    .pages__content h2 {
+        font-size: 1.6rem;
+    }
+}
+/* Дополнительно для страницы Disclaimer */
+.disclaimer-block {
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.disclaimer-block h2 {
+    color: var(--color-text);
+    border-left: 3px solid var(--color-secondary);
+    /* Розовый акцент для заголовков блоков */
+    padding-left: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.disclaimer-block p strong {
+    color: var(--color-secondary);
+    /* Выделение важных предупреждений */
+}
+/* Вспомогательные стили для Privacy Policy */
+.policy-sub {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 2rem 0 1rem;
+    color: var(--color-text);
+    letter-spacing: 1px;
+}
+
+.pages__content .lead {
+    border-left: 4px solid var(--color-accent);
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+    font-style: italic;
+}
