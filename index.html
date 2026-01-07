@@ -1,56 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/orbit-shift/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit-Shift | Твой карьерный апгрейд</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="module" crossorigin src="/orbit-shift/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/orbit-shift/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/orbit-shift/assets/styles-B7Tp1OUP.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__text">Orbit-Shift</span>
+      <span class="logo__dot"></span>
+    </a>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#platform" class="nav__link">Платформа</a></li>
+        <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li class="nav__item"><a href="#innovation" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary">Связаться</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay" id="menu-overlay">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li><a href="#home" class="mobile-nav__link">Главная</a></li>
+        <li><a href="#platform" class="mobile-nav__link">Платформа</a></li>
+        <li><a href="#benefits" class="mobile-nav__link">Преимущества</a></li>
+        <li><a href="#innovation" class="mobile-nav__link">Инновации</a></li>
+        <li><a href="#blog" class="mobile-nav__link">Блог</a></li>
+        <li><a href="#contact" class="mobile-nav__link">Связаться</a></li>
       </ul>
     </nav>
   </div>
-</header>
-
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+    <div id="hero-canvas" class="hero__canvas"></div>
+
+    <div class="container hero__container">
+        <div class="hero__content">
+            <span class="hero__badge" data-aos="fade-up">Платформа года</span>
+            <h1 class="hero__title">
+                Карьерный <br>
+                <span class="text-gradient">Upgrade</span>
+            </h1>
+            <p class="hero__subtitle">
+                Технологии, которые работают на вас. Постройте карьеру, которая работает на вас, используя стратегии
+                роста на базе инноваций.
+            </p>
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#platform" class="btn btn--outline">Узнать детали</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--description" id="platform">
+    <div class="container">
+        <div class="magazine-grid">
+            <div class="magazine-grid__item main-text" data-aos="fade-right">
+                <h2 class="section-title">Переосмыслите подход <br>к развитию</h2>
+                <p class="lead-text">Orbit-Shift — это платформа года для тех, кто готов к переходу на новый уровень. Мы
+                    строим передовую цифровую инфраструктуру для вашего карьерного взлета.</p>
+            </div>
+            <div class="magazine-grid__item side-text" data-aos="fade-left">
+                <p>Наши AI-инструменты для реальных задач позволяют оценить перспективы проекта и расширить горизонты.
+                    Это технология нового поколения, доступная уже сегодня в Европе.</p>
+                <a href="#contact" class="btn-text">Получить больше информации →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--benefits" id="benefits">
+    <div class="container">
+        <div class="section-header">
+            <span class="eyebrow">Почему мы?</span>
+            <h2 class="section-title">Ваши преимущества</h2>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card" data-aos="zoom-in">
+                <div class="benefit-card__icon"><i data-lucide="zap"></i></div>
+                <h3>Быстрый старт</h3>
+                <p>Подключение занимает 2 минуты. Легко разобраться без опыта и лишних сложностей.</p>
+            </div>
+            <div class="benefit-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="benefit-card__icon"><i data-lucide="trending-up"></i></div>
+                <h3>Стратегия роста</h3>
+                <p>Методологии, доказавшие эффективность в странах ЕС. Практики, применимые уже сегодня.</p>
+            </div>
+            <div class="benefit-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="benefit-card__icon"><i data-lucide="shield-check"></i></div>
+                <h3>Экспертность</h3>
+                <p>Проверенный партнер и экспертная поддержка на всех этапах вашего апгрейда.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--innovation" id="innovation">
+    <div class="container-fluid innovation-banner" data-aos="fixed-bg">
+        <div class="container">
+            <div class="innovation-content">
+                <h2 class="innovation-title">Инновационная технология, которая меняет правила игры</h2>
+                <p>Воплотите мечты в реальность с помощью решений, которые работают на вас 24/7.</p>
+            <a href="#contact" class="btn-innovation">
+                <span class="btn-innovation__label">Запросить доступ</span>
+                <span class="btn-innovation__icon">
+                    <i data-lucide="arrow-right"></i>
+                </span>
+                <div class="btn-innovation__bg"></div>
+            </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--blog" id="blog">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">База знаний</h2>
+        </div>
+        <div class="blog-grid">
+            <article class="blog-card" data-aos="fade-up">
+                <div class="blog-card__img"><img src="img/placeholder.png" alt="Blog"></div>
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">AI & Career</span>
+                    <h3>Как использовать нейросети для поиска оффера</h3>
+                    <p>Пошаговый путь, понятный каждому...</p>
+                    <a href="#" class="btn-text">Читать детали</a>
+                </div>
+            </article>
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="blog-card__img"><img src="img/placeholder.png" alt="Blog"></div>
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">Strategy</span>
+                    <h3>Программа пассивного дохода 2026</h3>
+                    <p>Технология для пассивного дохода и стабильности...</p>
+                    <a href="#" class="btn-text">Читать детали</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section section--contact" id="contact">
+    <div class="container">
+        <div class="contact-box">
+            <div class="contact-info">
+                <h2 class="section-title">Готовы к сдвигу?</h2>
+                <p>Бесплатная консультация по всем вопросам развития вашей карьеры.</p>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон (только цифры)" required>
+                </div>
+
+                <div class="captcha-box">
+                    <label id="captcha-label">Сколько будет 5 + 3?</label>
+                    <input type="number" id="captcha-input" placeholder="Ответ" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">Я согласен с <a href="privacy.html">политикой конфиденциальности</a></label>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">Отправить запрос</button>
+                <div id="form-message" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo logo--footer">
+        <span class="logo__text">Orbit-Shift</span>
       </a>
-    </p>
+      <p class="footer__description">
+        Решения, которые меняют правила игры в вашей карьере. Переосмыслите подход к развитию вместе с нами.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Навигация</h4>
+      <ul class="footer__links">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#platform">Платформа</a></li>
+        <li><a href="#benefits">Преимущества</a></li>
+        <li><a href="#blog">Блог</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Юридическая информация</h4>
+      <ul class="footer__links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="return.html">Return Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html">Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contact-list">
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>20-22 Wenlock Road, London, England, N1 7GU</span>
+        </li>
+        <li>
+          <i data-lucide="phone"></i>
+          <span>+44 20 7946 0123</span>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <span>hello@orbit-shift.fit</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; 2026 Orbit-Shift. Платформа уже доступна в Европе. Все права защищены.</p>
   </div>
 </footer>
-
-
+    <div id="cookie-popup" class="cookie-popup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+      </p>
+      <button id="accept-cookies" class="btn btn--primary">Принять</button>
+    </div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
